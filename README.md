@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project!
+# sparkcognition Option 1 CDK
 
-This is a blank project for TypeScript development with CDK.
+AWS infrastructure provisioned for Option 1 of the challenge is created using AWS CDK. To deploy:
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+1. Have CDK v2 installed (`npm install -g aws-cdk`) and ensure target account is [bootstrapped](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html).
+2. Change account details and region in `bin\sparkcog-option1-cdk.ts`.
+3. Run:
+   ```bash
+   npm install
+   npm run build
+   cdk deploy --profile <profile_name>
+   ```
